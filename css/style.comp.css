@@ -1,0 +1,190 @@
+/*  
+    0   - 400px:    small-phone
+    400 - 600px:    phone
+    600 - 900px:    Tablet(portrait)
+    900 - 1200px:   Tablet(landscape)
+    (1200 to 1800px is where our normal styles apply)
+    1800px +:       Big Desktop
+
+    $breakpoint argument choices:
+    -small-phone
+    -phone
+    -tab-port
+    -tab-land
+    -big-desktop
+*/
+:root {
+  --color-primary: hsl(158, 36%, 37%);
+  --color-secondary: hsl(30, 38%, 92%);
+  --color-dark-blue: hsl(212, 21%, 14%);
+  --color-gray-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --font-primary: "Montserrat", sans-serif;
+  --font-heading: "Fraunces", serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 81.25%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+  background-color: var(--color-secondary);
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 2.5rem 5rem;
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-gray-blue);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.typography__heading {
+  color: var(--color-dark-blue);
+  font-family: var(--font-heading);
+  font-size: 3.4rem;
+  line-height: 1;
+}
+.typography__paragraph {
+  font-size: 1.4rem;
+}
+.typography__category {
+  display: block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.typography__price--new {
+  font-size: 3rem;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  padding-right: 2rem;
+}
+.typography__price--old {
+  font-size: 1.4rem;
+}
+
+.u-mbs {
+  margin-bottom: 1rem !important;
+}
+
+.u-mbm {
+  margin-bottom: 2rem !important;
+}
+
+.btn:link, .btn:visited {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 1.5rem 3rem;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+.btn:hover, .btn:active {
+  background-color: hsl(158, 36%, 20%);
+}
+.btn__icon {
+  height: 2rem;
+  color: var(--color-white);
+  z-index: 2;
+  padding-right: 0.75rem;
+  transform: translateY(3px);
+}
+
+.card {
+  background-color: var(--color-white);
+  display: flex;
+  max-width: 60.28rem;
+  max-height: 45.38rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 37.5em) {
+  .card {
+    max-height: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+.card__img-container {
+  flex: 1 0 50%;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__info {
+  flex: 1 0 50%;
+  padding: 2.5rem 3.5rem;
+  display: grid;
+  grid-template-rows: 1fr max-content 1fr;
+}
+.card__btn-container {
+  align-self: center;
+}
+.card__price {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.comp.css.map */
