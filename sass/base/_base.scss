@@ -8,6 +8,34 @@
 
 html {
   font-size: 62.5%; //1rem = 10px
+
+  @include respond(big-desktop) {
+    font-size: 81.25%; //1rem = 13px
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px
+  }
+
+  @include respond(phone) {
+    font-size: 43.75%; //1rem = 8px
+  }
+
+  @include respond(phone) {
+    font-size: 43.75%; //1rem = 7px
+  }
+
+  @include respond(small-phone) {
+    font-size: 37.5%; //1rem = 6px
+  }
 }
 
 body {
@@ -18,4 +46,8 @@ body {
   min-height: 100vh;
   padding: 5rem 10rem;
   background-color: var(--color-secondary);
+
+  @include respond(tab-port) {
+    padding: 2.5rem 5rem;
+  }
 }

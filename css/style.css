@@ -1,3 +1,18 @@
+/*  
+    0   - 400px:    small-phone
+    400 - 600px:    phone
+    600 - 900px:    Tablet(portrait)
+    900 - 1200px:   Tablet(landscape)
+    (1200 to 1800px is where our normal styles apply)
+    1800px +:       Big Desktop
+
+    $breakpoint argument choices:
+    -small-phone
+    -phone
+    -tab-port
+    -tab-land
+    -big-desktop
+*/
 :root {
   --color-primary: hsl(158, 36%, 37%);
   --color-secondary: hsl(30, 38%, 92%);
@@ -19,6 +34,41 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 81.25%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 37.5%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -28,6 +78,11 @@ body {
   min-height: 100vh;
   padding: 5rem 10rem;
   background-color: var(--color-secondary);
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 2.5rem 5rem;
+  }
 }
 
 body {
@@ -56,7 +111,7 @@ body {
   font-size: 3rem;
   color: var(--color-primary);
   font-family: var(--font-heading);
-  padding-right: 2.5rem;
+  padding-right: 2rem;
 }
 .typography__price--old {
   font-size: 1.4rem;
@@ -102,6 +157,13 @@ body {
   max-height: 45.38rem;
   border-radius: 10px;
   overflow: hidden;
+}
+@media only screen and (max-width: 37.5em) {
+  .card {
+    max-height: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
 }
 .card__img-container {
   flex: 1 0 50%;
