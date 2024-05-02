@@ -23,17 +23,18 @@
   </head>
   <body>
     <div role="layout" aria-label="card layout" class="card">
-      <div
-        role="container"
-        aria-label="image container"
-        class="card__img-container"
-      >
+      <picture class="card__img-container">
+        <source
+          srcset="images/image-product-mobile.jpg"
+          media="(max-width: 37.5em)"
+          class="card__img"
+        />
         <img
           src="images/image-product-desktop.jpg"
           alt="Gabrielle Chanel Paris fragrence"
           class="card__img"
         />
-      </div>
+      </picture>
       <div class="card__info">
         <header class="card__header">
           <span class="typography__category u-mbm">Perfume</span>
