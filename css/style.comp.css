@@ -135,7 +135,7 @@ body {
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-primary);
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   width: 100%;
   transition: background-color 0.2s;
 }
