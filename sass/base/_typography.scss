@@ -4,3 +4,36 @@ body {
   font-weight: 500;
   line-height: 1.7;
 }
+
+.typography {
+  &__heading {
+    color: var(--color-dark-blue);
+    font-family: var(--font-heading);
+    font-size: 3.4rem;
+    line-height: 1;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+  }
+
+  &__category {
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  &__price {
+    &--new {
+      font-size: 3rem;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      padding-right: 2.5rem;
+    }
+
+    &--old {
+      font-size: 1.4rem;
+    }
+  }
+}

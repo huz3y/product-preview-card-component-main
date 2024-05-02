@@ -1,2 +1,34 @@
 .card {
+  background-color: var(--color-white);
+  display: flex;
+  max-width: 60.28rem;
+  max-height: 45.38rem;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__img-container {
+    flex: 1 0 50%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    flex: 1 0 50%;
+    padding: 2.5rem 3.5rem;
+    display: grid;
+    grid-template-rows: 1fr max-content 1fr;
+  }
+
+  &__btn-container {
+    align-self: center;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+  }
 }
