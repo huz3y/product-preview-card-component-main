@@ -12,5 +12,11 @@
     background-color: var(--color-primary);
     padding: 1.5rem 3rem;
     width: 100%;
+    transition: background-color 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: hsl(158, 36%, 20%);
   }
 }
